@@ -36,5 +36,11 @@ Analisis Exploratorio de Datos (EDA):
 Se realizó un análisis comprensivo de los datos para entender la estructura y las características del conjunto con el que estamos trabajando. Esto implica examinar la distribución de variables, detectar valores atípicos y explorar las relaciones entre las variables, entre otros aspectos clave. Este análisis es fundamental para identificar patrones o tendencias en los datos, lo que permite formular hipótesis sólidas y diseñar modelos más precisos.
 ![image](https://github.com/user-attachments/assets/bdd8ec2a-d8d8-44f1-8ba0-7e3178fa8b1a)
 
+![image](https://github.com/user-attachments/assets/7d9ce00e-10d3-4f7e-9286-82f0d2dfb230)
+
+![image](https://github.com/user-attachments/assets/58824ba1-2905-4493-8dcc-460ffb4b9cbf)
+
+
+
 Sistema de recomendación:
 En el archivo "Sistema de recomendación" se encuentra la guía detallada de cómo se diseñó y desarrolló el modelo de recomendación. Este documento incluye una descripción de los pasos seguidos, desde la recopilación y preparación de datos hasta la implementación del algoritmo de recomendación. Además, se documentan los criterios y métricas utilizados para evaluar la efectividad del modelo, proporcionando una visión integral del proceso de creación del sistema de recomendación.
