@@ -17,8 +17,8 @@ app.title = "Aplicación de consulta de películas - Efrain Linares"
 def Home():
     return "Bienvenidos a la APP de consultas de películas. Para continuar a la API de consulta agregar /docs al final de la url."
 
-df_movies = pd.read_parquet('C:\\Users\\EFRAIN LINARES\\Desktop\Proyecto 1\\Datos_clean\\movies_clean.parquet')
-df_tags = pd.read_parquet('C:\\Users\\EFRAIN LINARES\\Desktop\\Proyecto 1\\Datos_clean\\tags_ML.parquet')
+df_movies = pd.read_parquet('Datos_clean/movies_clean.parquet')
+df_tags = pd.read_parquet('Datos_clean/movies_clean.parquet')
 
 
 meses = {
@@ -171,7 +171,7 @@ def get_actor(nombre_actor: str):
     Calcula el número total de películas únicas en las que ha actuado, suma el retorno total obtenido de estas películas y calcula el retorno promedio por película. 
     Finalmente, retorna una cadena formateada con el nombre del actor, el número de películas en las que ha participado, el retorno total acumulado y el retorno promedio por película.
     """
-    df_credit_cast = pd.read_parquet('C:\\Users\\EFRAIN LINARES\\Desktop\\Proyecto 1\\Datos_clean\\credit_cast_clean.parquet')
+    df_credit_cast = pd.read_parquet('Datos_clean/credit_cast_clean.parquet')
     
     actor_normalizado = unidecode(nombre_actor).lower()  # Convertir y normalizar a minúsculas
     filtro_actor = df_credit_cast['cast_name'].str.lower().apply(unidecode) == actor_normalizado
@@ -204,7 +204,7 @@ def get_director(nombre_director: str):
     ara mejorar, sería ideal manejar casos donde no se encuentre el nombre del director en el DataFrame df_credit_crew o si no hay películas asociadas con el director, 
     además de optimizar la impresión de detalles de películas evitando bucles anidados.
     """
-    df_credit_crew = pd.read_parquet('C:\\Users\\EFRAIN LINARES\\Desktop\\Proyecto 1\\Datos_clean\\credit_crew_clean.parquet')
+    df_credit_crew = pd.read_parquet('Datos_clean/credit_crew_clean.parquet')
 
     director_pelicula = df_credit_crew[df_credit_crew['crew_name'] == nombre_director]['id']
     
